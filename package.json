@@ -1,5 +1,5 @@
 {
-    "name": "node-template",
+    "name": "user-management",
     "version": "1.0.0",
     "type": "module",
     "description": "Plantilla base para los proyectos desarrollados en el curso de Node.JS de la plataforma LearnThis Academy",
@@ -11,10 +11,7 @@
         "prepare": "husky install",
         "postinstall": "npm run prepare"
     },
-    "author": {
-        "name": "LearnThis Academy",
-        "url": "https://learnthisacademy.com"
-    },
+    "author": "Desarrollo útil",
     "license": "MIT",
     "devDependencies": {
         "eslint": "8.40.0",
@@ -36,3 +33,4 @@
         "*.{js,md}": "prettier --write"
     }
 }
+
