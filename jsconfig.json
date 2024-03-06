@@ -5,10 +5,11 @@
         "baseUrl": "./",
         "paths": {
             "#Config/*": ["./src/config/*"],
-        "#Controllers/*": ["./src/controllers/*"],
-        "#Dto/*": ["./src/dto/*"],
-        "#Schemas/*": ["./src/schemas/*"],
-        "#Routes/*":[ "./src/routes/*"]
+            "#Controllers/*": ["./src/controllers/*"],
+            "#Dto/*": ["./src/dto/*"],
+            "#Schemas/*": ["./src/schemas/*"],
+            "#Routes/*":[ "./src/routes/*"],
+            "#Lib/*": [ "./src/lib/*"],
         }
     }
 }
