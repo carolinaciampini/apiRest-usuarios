@@ -1,10 +1,6 @@
-Desarrollar una aplicación para la gestión de usuarios de una aplicación web.
+Se desarrolla una aplicación para la gestión de usuarios en una aplicación web.
+La comunicación con la aplicación se deberá realizar a través de una API REST (HTTP). La aplicación persistirá los datos, de forma que si se para todos los cambios deberán permanecer guardados.
 
-La comunicación con la aplicación se deberá realizar a través de una API REST (HTTP). La aplicación persistirá los datos, de forma que si se para todos los cambios deberán permanecer guardados
-
-El objetivo de esta aplicación es practicar los conceptos que hemos ido desarrollando a lo largo de la serie de videos del curso de Node.
-
-La idea es que utilicéis las herramientas que hemos ido viendo a lo largo de los videos, pero dejo la práctica abierta a modificaciones y ampliaciones
 
 Definición de entidades
   Usuario: Usuario registrado en la plataforma, todos los campos son obligatorios.
