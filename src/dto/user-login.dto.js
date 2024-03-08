@@ -8,8 +8,15 @@ import { emailDTOSchema, idDTOSchema, nameDTOSchema, passwordDTOSchema, surnameD
 
 const LoginDTOSchema = Type.Object({
   email: emailDTOSchema,
-  password: passwordDTOSchema
-});
+  password: passwordDTOSchema,
+
+},
+    {
+        additionalProperties: false,
+        errorMessage: {
+            additionalProperties: 'El formato del objeto no es válido',
+        },
+    });
 
 const ajv = new Ajv({allErrors: true}).addKeyword("kind").addKeyword("modifier");;
 ajv.addFormat("password", /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/);

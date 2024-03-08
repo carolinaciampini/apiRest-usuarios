@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const { Schema } = mongoose;
+const { Schema, model } = mongoose;
 
 // validacion EXTRA en BBDD
 const userSchema = new Schema({
@@ -30,5 +30,5 @@ const userSchema = new Schema({
   }
 });
 
-const userModel = model("User", userSchema);
-export default userModel;
+const UserModel = model("User", userSchema);
+export default UserModel;

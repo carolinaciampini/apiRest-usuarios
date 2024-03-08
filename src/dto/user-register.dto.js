@@ -22,10 +22,10 @@ const RegisterDTOSchema = Type.Object(
     }
 );
 
-const ajv = new Ajv({ allErrors: true })
+const ajv = new Ajv({ allErrors: true }).addKeyword('kind').addKeyword('modifier');
 
 ajv.addFormat('password', /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/);
-addFormats(ajv, ['email', 'uuid']).addKeyword('kind').addKeyword('modifier');
+addFormats(ajv, ['email', 'uuid']);
 addErrors(ajv);
 
 const validateSchema = ajv.compile(RegisterDTOSchema);
@@ -38,9 +38,10 @@ const userRegisterDTO = (req, res, next) => {
           return res.status(400).send({
             errors: validateSchema.errors.map((error) => error.message),
         });
-    }
+  } 
         
 
+    //res.status(200).send({ message: "Registro exitoso" });
     next();
 };
 
