@@ -1,7 +1,5 @@
 Se desarrolla una aplicación para la gestión de usuarios en una aplicación web.
-La comunicación con la aplicación se deberá realizar a través de una API REST (HTTP). La aplicación persistirá los datos, de forma que si se para todos los cambios deberán permanecer guardados.
-
-
+-Requisitos:
 Definición de entidades
   Usuario: Usuario registrado en la plataforma, todos los campos son obligatorios.
   Nombre: Mínimo de 2 caracteres y un máximo 20 (Todos los caracteres serán válidos)
